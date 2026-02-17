@@ -1,3 +1,28 @@
+// Theme toggle (dark/light mode)
+const themeToggle = document.querySelector('.theme-toggle');
+const html = document.documentElement;
+
+// Check for saved theme preference or system preference
+function initTheme() {
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'light') {
+        html.classList.add('light-mode');
+    } else if (savedTheme === 'dark') {
+        html.classList.remove('light-mode');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        html.classList.add('light-mode');
+    }
+}
+
+function toggleTheme() {
+    html.classList.toggle('light-mode');
+    const isLight = html.classList.contains('light-mode');
+    localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+}
+
+themeToggle.addEventListener('click', toggleTheme);
+initTheme();
+
 // Mobile navigation toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');

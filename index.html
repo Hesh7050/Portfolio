@@ -15,16 +15,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Night sky background with meteorites -->
+    <div class="night-sky" aria-hidden="true">
+        <div class="stars"></div>
+        <div class="stars stars2"></div>
+        <div class="stars stars3"></div>
+        <div class="meteor"></div>
+        <div class="meteor meteor-2"></div>
+        <div class="meteor meteor-3"></div>
+        <div class="meteor meteor-4"></div>
+        <div class="meteor meteor-5"></div>
+        <div class="meteor meteor-6"></div>
+    </div>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">Portfolio</a>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <i class="fas fa-sun" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -32,6 +49,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            </div>
         </div>
     </nav>
 
@@ -43,6 +61,9 @@
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="assets/cv/cv.pdf" download="Heshan_Minod_CV.pdf" class="btn btn-cv">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -56,7 +77,7 @@
             <h2 class="section-title">About <span class="highlight">Me</span></h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/profile-photo.png" alt="Profile Photo">
+                    <img src="assets/Aboutme.jpg" alt="Profile Photo">
                 </div>
                 <div class="about-text">
                     <p>I am Heshan Minod, I am 3rd-year IT undergraduate at SLIIT with a strong foundation in programming, software development, and web technologies,I am passionate about learning new technologies, solving problems efficiently, and applying my knowledge to practical projects. I bridge the gap between complex backend systems and modern, scalable frontend interfaces..</p>                    
@@ -289,6 +310,15 @@
                     <i class="fas fa-envelope"></i>
                     <span>heshhmk@gmail.com</span>
                 </a>
+                <!-- Update href and span with your phone number, e.g. tel:+94771234567 -->
+                <a href="tel:+94771234567" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <span>+94 76 6484 473</span>
+                </a>
+                <a href="assets/cv/cv.pdf" download="Heshan_Minod_CV.pdf" class="contact-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Download CV</span>
+                </a>
                 <a href="https://github.com/Hesh7050" target="_blank" rel="noopener" class="contact-card">
                     <i class="fab fa-github"></i>
                     <span>GitHub</span>
@@ -303,7 +333,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Your Name. Crafted with <i class="fas fa-heart"></i></p>
+        <p>© 2025 Heshan Minod. Crafted with <i class="fas fa-heart"></i></p>
     </footer>
 
     <script src="script.js"></script>
