@@ -572,6 +572,85 @@ html.light-mode .theme-toggle .fa-moon {
     backdrop-filter: blur(10px);
 }
 
+.certificates {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certificate-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(96, 165, 250, 0.15);
+    transition: var(--transition);
+}
+
+.certificate-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+}
+
+.certificate-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.25), rgba(59, 130, 246, 0.25));
+    color: var(--color-primary-light);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+.certificate-icon i {
+    font-size: 1.8rem;
+}
+
+.certificate-info h3 {
+    color: var(--color-text);
+    margin-bottom: 0.15rem;
+    font-size: 1.1rem;
+}
+
+.certificate-info p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.65rem;
+}
+
+.certificate-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-primary-light);
+    font-weight: 600;
+    padding: 0.55rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    background: rgba(96, 165, 250, 0.12);
+    transition: var(--transition);
+}
+
+.certificate-link:hover {
+    background: rgba(96, 165, 250, 0.25);
+    border-color: rgba(96, 165, 250, 0.5);
+    transform: translateY(-1px);
+}
+
 .education-timeline {
     max-width: 700px;
     margin: 2rem auto 0;
@@ -986,12 +1065,14 @@ html.light-mode .nav-toggle span {
 /* Light mode sections */
 html.light-mode .about,
 html.light-mode .education,
+html.light-mode .certificates,
 html.light-mode .contact {
     background: rgba(255, 255, 255, 0.6);
 }
 
 html.light-mode .skill-card,
 html.light-mode .education-item,
+html.light-mode .certificate-card,
 html.light-mode .project-card,
 html.light-mode .contact-card,
 html.light-mode .contact-form-wrapper {

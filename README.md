@@ -8,6 +8,7 @@ A personal portfolio website showcasing my projects, skills, education, and expe
 - **About Me** - Introduction with profile photo
 - **Skills** - Technologies and tools with icons
 - **Education** - Academic background and certifications
+- **Certificates** - Download/view certificate PDFs
 - **Projects** - Portfolio of work with GitHub links and screenshots
 - **Contact** - Message form (delivers to your email via FormSubmit.co) and social links
 
@@ -25,6 +26,8 @@ A personal portfolio website showcasing my projects, skills, education, and expe
    - **Contact**: Update email and social media links
 3. Add project screenshots to `assets/images/` named `project1.jpg`, `project2.jpg`, `project3.jpg` (or update the `src` in HTML to match your filenames)
 4. Your profile photo is already at `assets/profile-photo.png`
+5. Your CV is at `assets/cv/cv.pdf` (the site downloads it from the Home button and Contact section)
+6. Your certificates are in `assets/certificates/`
 
 ## Preview
 
